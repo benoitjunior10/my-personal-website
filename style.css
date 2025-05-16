@@ -24,6 +24,20 @@ body {
     overflow: hidden; 
 }
 
+/* amelioration des couleurs et de l'animation */
+:root {
+    --primary-color: #007bff; /* Bleu primaire vibrant */
+    --secondary-color: #6c757d; /* Gris secondaire */
+    --background-color: #f8f9fa; /* Fond clair */
+    --text-color: #333;
+    --card-background: #fff;
+    --border-color: #e0e0e0;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+    --transition-speed: 0.3s ease;
+}
+
 /* menu navigation ak kelke animation */
 
 
@@ -418,4 +432,5 @@ body.dark-mode .contact-form textarea {
 .social-links a:hover {
     color: var(--primary-color);
 }
+
 
