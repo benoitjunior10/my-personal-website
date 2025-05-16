@@ -38,6 +38,16 @@ body {
     --transition-speed: 0.3s ease;
 }
 
+body.dark-mode {
+    --primary-color: #00c6ff; /* Bleu plus clair pour le mode sombre */
+    --secondary-color: #adb5bd;
+    --background-color: #1a1a2e; /* Fond sombre */
+    --text-color: #e0e0e0;
+    --card-background: #242536; /* Fond de carte sombre */
+    --border-color: #3a3b4a;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* menu navigation ak kelke animation */
 
 
@@ -431,6 +441,84 @@ body.dark-mode .contact-form textarea {
 
 .social-links a:hover {
     color: var(--primary-color);
+}
+
+
+
+/* responsive */
+@media (max-width: 992px) {
+    .hero-section-inuka .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        margin-top: 2rem;
+    }
+    .hero-image img {
+        max-width: 300px;
+    }
+    .about-contenu {
+        flex-direction: column;
+    }
+    .about-image {
+        margin-top: 2rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px; /* Hauteur de la navbar */
+        flex-direction: column;
+        background-color: var(--card-background);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    .projects-grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+    }
 }
 
 
