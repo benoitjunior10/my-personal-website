@@ -232,3 +232,35 @@ body.dark-mode .btn-secondary:hover {
     font-size: 0.9rem;
 }
 
+
+/* About Section */
+.about-section {
+    background-color: var(--card-background); /* Légèrement différent du fond principal */
+}
+
+.about-contenu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-texte {
+    flex: 2;
+    text-align: justify;
+}
+
+.about-texte p {
+    margin-bottom: 1rem;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
