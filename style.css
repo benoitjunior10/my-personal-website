@@ -264,3 +264,95 @@ body.dark-mode .btn-secondary:hover {
     box-shadow: var(--shadow);
 }
 
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.skill-card {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+
+
+/* Section projet */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px; /* Ajustez selon vos images */
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+    flex-grow: 1; /* Permet au contenu de prendre l'espace restant */
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h3 {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.project-info p {
+    margin-bottom: 15px;
+    flex-grow: 1; /* Pousse les boutons vers le bas si la description est courte */
+}
+
+.project-links {
+    margin-top: auto; /* Pousse les liens en bas de la carte */
+}
+
+.project-links .btn i {
+    margin-left: 5px;
+}
+
+
