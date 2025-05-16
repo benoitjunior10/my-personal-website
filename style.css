@@ -427,21 +427,6 @@ body.dark-mode .contact-form textarea {
     margin: 0 auto; /* Centrer le bouton */
 }
 
-.social-links {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.social-links a {
-    color: var(--text-color);
-    font-size: 2rem;
-    margin: 0 15px;
-    transition: color var(--transition-speed);
-}
-
-.social-links a:hover {
-    color: var(--primary-color);
-}
 
 
 
