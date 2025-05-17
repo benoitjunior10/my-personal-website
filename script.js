@@ -1,12 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const body = document.body;
-    const moonIcon = '<i class="fas fa-moon"></i>';
-    const sunIcon = '<i class="fas fa-sun"></i>';
-
-
     if (localStorage.getItem('darkMode') === 'enabled') {
         body.classList.add('dark-mode');
         if(darkModeToggle) darkModeToggle.innerHTML = sunIcon;
@@ -28,8 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Affichage de l'année actuelle dans le footer
-    const currentYearSpan = document.getElementById('currentYear');
+    const currentYearSpan = document.getElementById('currentYearFooter');
     if (currentYearSpan) {
         currentYearSpan.textContent = new Date().getFullYear();
     }
+
+   
+
+
+    
+
+    
 });
