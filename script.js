@@ -1,14 +1,17 @@
-const darkModeToggle = document.getElementById('darkModeToggle');
-const body = document.body;
-const moonIcon = '<i class="fas fa-moon"></i>';
-const sunIcon = '<i class="fas fa-sun"></i>';
+document.addEventListener('DOMContentLoaded', () => {
 
 
-if (localStorage.getItem('darkMode') === 'enabled') {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    const moonIcon = '<i class="fas fa-moon"></i>';
+    const sunIcon = '<i class="fas fa-sun"></i>';
+
+
+    if (localStorage.getItem('darkMode') === 'enabled') {
         body.classList.add('dark-mode');
         if(darkModeToggle) darkModeToggle.innerHTML = sunIcon;
-    } else {
-         if(darkModeToggle) darkModeToggle.innerHTML = moonIcon;
+        } else {
+        if(darkModeToggle) darkModeToggle.innerHTML = moonIcon;
     }
 
     if (darkModeToggle) {
@@ -23,3 +26,10 @@ if (localStorage.getItem('darkMode') === 'enabled') {
             }
         });
     }
+
+    // Affichage de l'année actuelle dans le footer
+    const currentYearSpan = document.getElementById('currentYear');
+    if (currentYearSpan) {
+        currentYearSpan.textContent = new Date().getFullYear();
+    }
+});

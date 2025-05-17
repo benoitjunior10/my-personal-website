@@ -427,6 +427,87 @@ body.dark-mode .contact-form textarea {
     margin: 0 auto; /* Centrer le bouton */
 }
 
+/* section footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; 
+}
+
+/* lien social footer */
+.footer-social-links a {
+    color: #ecf0f1;
+    font-size: 1.8rem; /* Taille des icônes */
+    margin: 0 12px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-social-links a:hover {
+    color: var(--primary-color); /* Utilise la couleur primaire définie précédemment */
+    transform: translateY(-3px); /* Petit effet de soulèvement */
+}
+
+
+/* Footer Text */
+.footer-texte p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.footer-texte .tagline {
+    font-style: italic;
+    color: #bdc3c7; /* Une couleur un peu plus douce pour la tagline */
+}
+
+/* Back to Top */
+.footer-back-to-top a {
+    color: #ecf0f1;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 10px 12px; /* Ajustez pour un cercle plus parfait selon l'icône */
+    display: inline-block;
+    line-height: 1; /* S'assurer que l'icône est bien centrée */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-back-to-top a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+/* Responsive adjustments pour le footer si nécessaire */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row; /* Dispose les éléments en ligne sur les grands écrans */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-social-links {
+        order: 1; /* Change l'ordre pour que les liens sociaux soient au début ou à la fin */
+    }
+    .footer-text {
+        order: 2;
+        text-align: left; /* Peut être centré ou à gauche sur les grands écrans */
+    }
+    .footer-back-to-top {
+        order: 3;
+    }
+}
 
 
 
